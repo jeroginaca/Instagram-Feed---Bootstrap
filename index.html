@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-5 pt-4 pb-2">
+            <a href="#" class="navbar-brand d-flex">
+                <i class="fa-brands fa-instagram mr-4" style="font-size: 36px;"></i>
+                <p style="font-size: 28px;">Instagram</p>
+            </a>
+            <button class="navbar-toggler mb-4"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="form-inline my-2 my-lg-0" id="navbarSupportedContent">
+
+                <!-- Button trigger modal -->
+
+                <button type="button" 
+                class="btn btn-success mx-4" 
+                data-toggle="modal" 
+                data-target="#exampleModal">
+                    Create a new post
+                </button>
+                    
+                <!-- Modal -->
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post:</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <span class="border-bottom"></span>
+    
+                        <div class="modal-body">
+                            <h6> Caption:</h6>
+                            <div class="card">
+                                  <div class="card-body">This is some text within a card body.</div>
+                            </div>
+    
+                            <div class="d-grid gap-2 d-md-block mt-4">
+                                <button class="btn btn-light btn-outline-secondary" type="button"><i class="fa-solid fa-camera"></i></button>
+                                <button class="btn btn-light btn-outline-secondary" type="button"><i class="fa-solid fa-location-pin"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-success">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+       
+            <!-- Dropdown -->
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenu2"
+                data-toggle="dropdown">
+                <i class="fa-solid fa-gear"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Action</button>
+                    <span class="border-top border-danger"></span>
+                    <button class="dropdown-item" type="button">
+                        <p class="text-danger">Log Out</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pills -->
+
+   
+    <nav>
+            <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" >
+                    <i class="fa-solid fa-grip"></i></a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">
+                    <i class="fa-solid fa-square"></i></a>
+            </div>
+    </nav>
+
+    <!-- Grid -->
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row mx-auto ">
+                <div class="col-sm-6 col-md-4 mt-3">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>  
+                <div class="col-sm-6 col-md-4 mt-3">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/10361797/pexels-photo-10361797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3">
+                    <img class="img-fluid" src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>   
+            </div>
+        </div>
+   
+        <!-- Photo Column -->
+
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel">
+
+            <!-- Photo #1 -->
+
+            <div class="row d-flex justify-content-center">
+                <div class="col col-sm-11 col-md-10 col-lg-5">
+                    <div class="card mx-auto mt-5">
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="col-6">
+                                <h3>Bobby</h3>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-2 mx-auto ">
+                                <h6>08/26</h6>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-0 mx-1"style="font-size: 22px ;"><i class="fa-regular fa-heart" ></i></div>
+                                <div class="col-0 mx-2"style="font-size: 22px ;"><i class="fa-regular fa-comment"></i></div>
+                                <div class="col-0"style="font-size: 22px ;"><i class="fa-regular fa-paper-plane"></i></div>
+                                <div class="col-9"></div>
+                                <div class="col-0"style="font-size: 22px ;"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <h6 class="mt-4"> 6 likes</h6>
+                            <p class="card-text">Pero que lindos perritos! #dogstyle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+             <!-- Photo #2 -->
+
+             <div class="row d-flex justify-content-center">
+                <div class="col col-sm-11 col-md-10 col-lg-5">
+                    <div class="card mx-auto mt-5">
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="col-6">
+                                <h3>Bobby</h3>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-2 mx-auto ">
+                                <h6>08/26</h6>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-0 mx-1"style="font-size: 22px ;"><i class="fa-regular fa-heart" ></i></div>
+                                <div class="col-0 mx-2"style="font-size: 22px ;"><i class="fa-regular fa-comment"></i></div>
+                                <div class="col-0"style="font-size: 22px ;"><i class="fa-regular fa-paper-plane"></i></div>
+                                <div class="col-9"></div>
+                                <div class="col-0"style="font-size: 22px ;"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <h6 class="mt-4"> 6 likes</h6>
+                            <p class="card-text">Pero que lindos perritos! #dogstyle</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+             <!-- Photo #3 -->
+
+             <div class="row d-flex justify-content-center">
+                <div class="col col-sm-11 col-md-10 col-lg-5">
+                    <div class="card mx-auto mt-5">
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="col-6">
+                                <h3>Bobby</h3>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-2 mx-auto ">
+                                <h6>08/26</h6>
+                            </div>
+                        </div>
+                        <img class="card-img-top" src="https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-0 mx-1"style="font-size: 22px ;"><i class="fa-regular fa-heart" ></i></div>
+                                <div class="col-0 mx-2"style="font-size: 22px ;"><i class="fa-regular fa-comment"></i></div>
+                                <div class="col-0"style="font-size: 22px ;"><i class="fa-regular fa-paper-plane"></i></div>
+                                <div class="col-9"></div>
+                                <div class="col-0"style="font-size: 22px ;"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <h6 class="mt-4"> 6 likes</h6>
+                            <p class="card-text">Pero que lindos perritos! #dogstyle</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>         
+    </div>
+   
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
